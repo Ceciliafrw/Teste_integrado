@@ -6,12 +6,12 @@
 
 *** Settings ***
 
-Resource        Marvel.resource
-Suite Setup     Criar Configuracao Inicial do Teste
+Resource  Marvel.resource
+Suite Setup  Configuracao Inicial do Teste
 
 *** Test Cases ***
 Testar API Char da Marvel
-    Configurar Sessao
+    Configurar Sessao requisicao_marvel 
     Realizar requisicao para API Char
     Validar os campos obrigatorios
     Validar se a chave 'code' esta preenchida

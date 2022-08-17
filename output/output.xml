@@ -1,16 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0.1 (Python 3.9.2 on win32)" generated="20220817 13:36:11.370" rpa="false" schemaversion="3">
+<robot generator="Robot 5.0.1 (Python 3.9.2 on win32)" generated="20220817 13:51:00.517" rpa="false" schemaversion="3">
 <suite id="s1" name="Marvel" source="C:\Users\cecilia.ferreira\Documents\escola tec\Teste_integrado\Marvel.robot">
-<kw name="Criar Configuracao Inicial do Teste" type="SETUP">
-<msg timestamp="20220817 13:36:11.390" level="FAIL">No keyword with name 'Criar Configuracao Inicial do Teste' found.</msg>
-<status status="FAIL" starttime="20220817 13:36:11.390" endtime="20220817 13:36:11.390"/>
+<kw name="Configuracao Inicial do Teste" library="Marvel" type="SETUP">
+<kw name="Configurar Sessao requisicao_marvel">
+<arg>${URL_MARVEL}</arg>
+<arg>verify=true</arg>
+<arg>headers=${HEADERS}</arg>
+<msg timestamp="20220817 13:51:00.549" level="FAIL">No keyword with name 'Configurar Sessao requisicao_marvel' found.</msg>
+<status status="FAIL" starttime="20220817 13:51:00.549" endtime="20220817 13:51:00.549"/>
+</kw>
+<status status="FAIL" starttime="20220817 13:51:00.549" endtime="20220817 13:51:00.549"/>
 </kw>
 <test id="s1-t1" name="Testar API Char da Marvel" line="13">
-<status status="FAIL" starttime="20220817 13:36:11.390" endtime="20220817 13:36:11.390">Parent suite setup failed:
-No keyword with name 'Criar Configuracao Inicial do Teste' found.</status>
+<status status="FAIL" starttime="20220817 13:51:00.549" endtime="20220817 13:51:00.549">Parent suite setup failed:
+No keyword with name 'Configurar Sessao requisicao_marvel' found.</status>
 </test>
-<status status="FAIL" starttime="20220817 13:36:11.371" endtime="20220817 13:36:11.390">Suite setup failed:
-No keyword with name 'Criar Configuracao Inicial do Teste' found.</status>
+<status status="FAIL" starttime="20220817 13:51:00.533" endtime="20220817 13:51:00.564">Suite setup failed:
+No keyword with name 'Configurar Sessao requisicao_marvel' found.</status>
 </suite>
 <statistics>
 <total>
@@ -23,7 +29,7 @@ No keyword with name 'Criar Configuracao Inicial do Teste' found.</status>
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20220817 13:36:11.390" level="ERROR">Error in file 'C:\Users\cecilia.ferreira\Documents\escola tec\Teste_integrado\Marvel.resource' on line 2: Importing library 'RequestLibrary' failed: ModuleNotFoundError: No module named 'RequestLibrary'
+<msg timestamp="20220817 13:51:00.549" level="ERROR">Error in file 'C:\Users\cecilia.ferreira\Documents\escola tec\Teste_integrado\Marvel.resource' on line 2: Importing library 'RequestLibrary' failed: ModuleNotFoundError: No module named 'RequestLibrary'
 Traceback (most recent call last):
   None
 PYTHONPATH:
