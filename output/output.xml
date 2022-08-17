@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.9.2 on win32)" generated="20220817 13:36:11.370" rpa="false" schemaversion="3">
+<suite id="s1" name="Marvel" source="C:\Users\cecilia.ferreira\Documents\escola tec\Teste_integrado\Marvel.robot">
+<kw name="Criar Configuracao Inicial do Teste" type="SETUP">
+<msg timestamp="20220817 13:36:11.390" level="FAIL">No keyword with name 'Criar Configuracao Inicial do Teste' found.</msg>
+<status status="FAIL" starttime="20220817 13:36:11.390" endtime="20220817 13:36:11.390"/>
+</kw>
+<test id="s1-t1" name="Testar API Char da Marvel" line="13">
+<status status="FAIL" starttime="20220817 13:36:11.390" endtime="20220817 13:36:11.390">Parent suite setup failed:
+No keyword with name 'Criar Configuracao Inicial do Teste' found.</status>
+</test>
+<status status="FAIL" starttime="20220817 13:36:11.371" endtime="20220817 13:36:11.390">Suite setup failed:
+No keyword with name 'Criar Configuracao Inicial do Teste' found.</status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Marvel">Marvel</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20220817 13:36:11.390" level="ERROR">Error in file 'C:\Users\cecilia.ferreira\Documents\escola tec\Teste_integrado\Marvel.resource' on line 2: Importing library 'RequestLibrary' failed: ModuleNotFoundError: No module named 'RequestLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\cecilia.ferreira\teste_software\Scripts\robot.exe
+  c:\program files\python39\python39.zip
+  c:\program files\python39\DLLs
+  c:\program files\python39\lib
+  c:\program files\python39
+  C:\Users\cecilia.ferreira\teste_software
+  C:\Users\cecilia.ferreira\teste_software\lib\site-packages</msg>
+</errors>
+</robot>

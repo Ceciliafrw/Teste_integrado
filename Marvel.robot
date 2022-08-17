@@ -4,16 +4,16 @@
 # - No arquivo .robot deve ser criado pelo menos 3 cenários de testes.
 # - No arquivo .resource utilize para colocar as keywords e montar a lógica das chamadas.
 
-**Settings***
+*** Settings ***
 
-Documentation  Essa suite referese a teste de API da Marvel
+Resource        Marvel.resource
+Suite Setup     Criar Configuracao Inicial do Teste
 
-Resource  Marvel.resource
-Suite Setup  Criar Configuracao Inicial do Teste
-
-**Test Cases***
+*** Test Cases ***
 Testar API Char da Marvel
-    Realizar requisicao GET na /vl/public/characters
-    Validas se status code retornou 200
+    Configurar Sessao
+    Realizar requisicao para API Char
+    Validar os campos obrigatorios
     Validar se a chave 'code' esta preenchida
     Validar se a chave '"copyright" esta preenchida
+
