@@ -7,10 +7,14 @@
 #- Para perigo maior que 2 e menor que 5 retornar "Vilão Preso"
 #- Para perigo igual a 5 retornar "Vilão Dominou o Mundo"
 
+from typing import List
+from xxlimited import Str
+
+
 class MarvelViloes():
-    def __init__ (self, vilao, poderes, perigo):
+    def __init__ (self, vilao: Str, poderes: list, perigo: int):
         self.vilao = vilao
-        self.poderes = poderes
+        self.poderes = ["RAIO", "FOGO", "GELO", "AGUA"]
         self.perigo = perigo
         
         print(f"{vilao} tem o poder {poderes} seu poder é perigoso nível {perigo}")
@@ -43,7 +47,7 @@ class MarvelViloes():
     def set_perigo(self, perigo):
          self.perigo = perigo
 
-marvel = MarvelViloes("Cecilia", "Le pensamento", 5)
+marvel = MarvelViloes("MALEVOLA","RAIO" , 5)
 
 vilao = input("\nQual nome do seu vilão? ")
 poderes = input("Qual poder do seu vilão? ")
